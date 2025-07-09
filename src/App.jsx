@@ -6,12 +6,13 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
+  
   const getInitialCount = () => {
     const savedCount = localStorage.getItem("count")
     return savedCount ? parseInt(savedCount) : 0
   }
-
   const [count, setCount] = useState(getInitialCount)
+
 
   useEffect(() => {
     localStorage.setItem("count", count)
