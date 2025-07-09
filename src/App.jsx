@@ -26,7 +26,7 @@ function App() {
   }
   const handleDecrement = () => {
     if (count <= 0) {
-      notify(" count aleray zoro!");
+      notify(" Count Already zoro!");
       return '0 ';
     } else {
       setCount(count - 1)
